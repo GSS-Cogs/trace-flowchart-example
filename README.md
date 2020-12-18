@@ -19,8 +19,8 @@ Basically, a simple overview with optional complexity (and have it created autom
 # This Repo
 
 * I've mocked up the input data as `trace.json` (this isn't how the TransformTrace is logging things at the moment but it's all data it has access to and could). 
-* `Flowchart.ttl` is build from trace.json (you could arguably just output ttl from trasformTrace but this was easier)
-* `index.html` makes it pretty
+* `flowchart.ttl` is build from `trace.json` (you could/should just output ttl directly from the trasformTrace if we go down this route).
+* `index.html` template that uses `flowchat.ttl` to render the flowchart page you end up looking at.
 
 # Running Locally
 
