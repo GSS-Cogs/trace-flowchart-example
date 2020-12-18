@@ -1,7 +1,7 @@
 
 # Concept
 
-We want to log out information via the TransformTrace class to inform an interactive breakdown/view of what data has been captures, from where and what post prossesing has taken place.
+We want to log out information via the TransformTrace class to inform an interactive breakdown/view of what data has been extracted, from where and what post prossesing has taken place.
 
 What I'm trying to do is capture a simple overview with optional complexity (and have it created automatically).
 
