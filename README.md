@@ -10,10 +10,11 @@ Basically, a simple overview with optional complexity (and have it created autom
 
 # Types (for want of a better term)
 
-* Pipeline - the name of the pipeline, our starting node
-* Landing Page - a landing page for a pipeline
-* Distribution - a file taken from a landing page
-* Table - a "table" for a spreadsheet, a single csv or something pieced together from one of more of them.
+* Pipeline - the name of the pipeline, our starting node (only ever one of these)
+* Landing Page - a landing page for a pipeline (one or more)
+* Distribution - a file taken from a landing page (one of more per landing page)
+* Table - a "table" for a spreadsheet, a single csv or something pieced together from one of more of them (one of more per distribution).
+* PMD - the uploaded output (only ever one of these)
 
 # This Repo
 
