@@ -1,0 +1,193 @@
+
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix cogsgit: <https://github.com/GSS-Cogs/> .
+@prefix cogs: <http://gss-cogs.uk/def/arch/> .
+
+<http://gss-cogs.uk/def/arch> a owl:Ontology;
+rdfs:label "Transform Mapping" ;
+.
+
+cogs:SoftwarePackage a owl:Class ;
+rdfs:label "Software package" ;
+.
+cogs:SoftwarePackage a owl:Class ;
+rdfs:label2 "Label2" ;
+.
+cogs:Pipeline a owl:Class ;
+rdfs:subClassOf cogs:SoftwarePackage ;
+rdfs:label "Pipeline" ;
+.
+cogs:Distribution a owl:Class ;
+rdfs:subClassOf cogs:SoftwarePackage ;
+rdfs:label "Distribution" ;
+.
+cogs:LandingPage a owl:Class ;
+  rdfs:subClassOf cogs:SoftwarePackage ;
+  rdfs:label "Landing Page" ;
+.
+cogs:Datasets a owl:Class ;
+rdfs:subClassOf cogs:SoftwarePackage ;
+rdfs:label "Output Dataset" ;
+.
+cogs:Table a owl:Class ;
+rdfs:subClassOf cogs:SoftwarePackage ;
+rdfs:label "Table Name";
+.
+cogs:Columns a owl:Class ;
+rdfs:subClassOf cogs:SoftwarePackage ;
+rdfs:label "Table" ;
+.
+cogs:PMD a owl:Class ;
+rdfs:subClassOf cogs:SoftwarePackage ;
+rdfs:label "PMD" ;
+.
+cogs:Rename a owl:Class ;
+rdfs:subClassOf cogs:SoftwarePackage ;
+rdfs:label "Output" ;
+.
+
+# Initial Pipeline element
+cogsgit:top-level a cogs:Source ;
+rdfs:label "Pipeline";
+rdfs:label2 "ONSPinkbook";
+rdfs:resource "841036ca3f8411ebb3780opiadd9130002";
+cogs:scrape cogsgit:841036ca3f8411ebb3780242ac130002 ;  . 
+
+# A landing page and the source(s) being drawn from it
+cogsgit:841036ca3f8411ebb3780242ac130002 a cogs:LandingPage ; rdfs:resource "841036ca3f8411ebb3780242ac130002" ; rdfs:label "Landing Page" ; rdfs:comment "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/datasets/3tradeinservicesthepinkbook2016" ; 
+cogs:scrape cogsgit:f8d649fa3f8311ebb3780242ac130002; . 
+
+cogsgit:f8d649fa3f8311ebb3780242ac130002 a cogs:Source ; rdfs:label "Distribution" ; rdfs:resource "f8d649fa3f8311ebb3780242ac130002" ; rdfs:comment "pinkbook2020chapter3.xls" ;cogs:transforms cogsgit:acd234cc3ec211ebb3780242ac130002 ; cogs:transforms cogsgit:66d9eeae3ec411ebb3780242ac130002 ; cogs:transforms cogsgit:78f052543ec411ebb3780242ac130002 ; cogs:transforms cogsgit:f928c2523ecf11ebb3780242ac130002 ; cogs:transforms cogsgit:3e4b323e3ed011ebb3780242ac130002 ; cogs:transforms cogsgit:43e0907c3ed011ebb3780242ac130002 ; cogs:transforms cogsgit:4ba2fe623ed011ebb3780242ac130002 ; cogs:transforms cogsgit:5bd2baa23ed011ebb3780242ac130002 ;  . 
+
+cogsgit:acd234cc3ec211ebb3780242ac130002 a cogs:Table ; rdfs:resource "acd234cc3ec211ebb3780242ac130002" ; rdfs:label "Table" ; rdfs:comment "3.2" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br>Hard code geography to 'K02000001'<br><br>
+<strong>Period</strong>
+<br> Taken from the header row, above<br>the observations<br><br>
+<strong>CDID</strong>
+<br>Selected cdids from column B<br><br>
+<strong>Flow_Directions</strong>
+<br> Set as one of 'Exports<br>(Credits)', 'Imports (Debits)',<br>'Balances'<br><br>
+<strong>Value</strong>
+<br> Taken as anything thats in line<br>with both a period and a CDID code<br><br>
+<strong>Marker</strong>
+<br> Anything selected as 'Value'<br>that's not a number.<br><br>""" ;cogs:joins cogsgit:bec8bd103ecf11ebb3780242ac130002 ; . 
+cogsgit:66d9eeae3ec411ebb3780242ac130002 a cogs:Table ; rdfs:resource "66d9eeae3ec411ebb3780242ac130002" ; rdfs:label "Table" ; rdfs:comment "3.3" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br>Hard code geography to 'K02000001'<br><br>
+<strong>Period</strong>
+<br> Taken from the header row, above<br>the observations<br><br>
+<strong>CDID</strong>
+<br>Selected cdids from column B<br><br>
+<strong>Flow_Directions</strong>
+<br> Set as one of 'Exports<br>(Credits)', 'Imports (Debits)',<br>'Balances'<br><br>
+<strong>Value</strong>
+<br> Taken as anything thats in line<br>with both a period and a CDID code<br><br>
+<strong>Marker</strong>
+<br> Anything selected as 'Value'<br>that's not a number.<br><br>""" ;cogs:joins cogsgit:bec8bd103ecf11ebb3780242ac130002 ; . 
+cogsgit:78f052543ec411ebb3780242ac130002 a cogs:Table ; rdfs:resource "78f052543ec411ebb3780242ac130002" ; rdfs:label "Table" ; rdfs:comment "3.4" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br>Hard code geography to 'K02000001'<br><br>
+<strong>Period</strong>
+<br> Taken from the header row, above<br>the observations<br><br>
+<strong>CDID</strong>
+<br>Selected cdids from column B<br><br>
+<strong>Flow_Directions</strong>
+<br> Set as one of 'Exports<br>(Credits)', 'Imports (Debits)',<br>'Balances'<br><br>
+<strong>Value</strong>
+<br> Taken as anything thats in line<br>with both a period and a CDID code<br><br>
+<strong>Marker</strong>
+<br> Anything selected as 'Value'<br>that's not a number.<br><br>""" ;cogs:joins cogsgit:bec8bd103ecf11ebb3780242ac130002 ; . 
+cogsgit:f928c2523ecf11ebb3780242ac130002 a cogs:Table ; rdfs:resource "f928c2523ecf11ebb3780242ac130002" ; rdfs:label "Table" ; rdfs:comment "3.5" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br>Hard code geography to 'K02000001'<br><br>
+<strong>Period</strong>
+<br> Taken from the header row, above<br>the observations<br><br>
+<strong>CDID</strong>
+<br>Selected cdids from column B<br><br>
+<strong>Flow_Directions</strong>
+<br> Set as one of 'Exports<br>(Credits)', 'Imports (Debits)',<br>'Balances'<br><br>
+<strong>Value</strong>
+<br> Taken as anything thats in line<br>with both a period and a CDID code<br><br>
+<strong>Marker</strong>
+<br> Anything selected as 'Value'<br>that's not a number.<br><br>""" ;cogs:joins cogsgit:bec8bd103ecf11ebb3780242ac130002 ; . 
+cogsgit:3e4b323e3ed011ebb3780242ac130002 a cogs:Table ; rdfs:resource "3e4b323e3ed011ebb3780242ac130002" ; rdfs:label "Table" ; rdfs:comment "3.6" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br>Hard code geography to 'K02000001'<br><br>
+<strong>Period</strong>
+<br> Taken from the header row, above<br>the observations<br><br>
+<strong>CDID</strong>
+<br>Selected cdids from column B<br><br>
+<strong>Flow_Directions</strong>
+<br> Set as one of 'Exports<br>(Credits)', 'Imports (Debits)',<br>'Balances'<br><br>
+<strong>Value</strong>
+<br> Taken as anything thats in line<br>with both a period and a CDID code<br><br>
+<strong>Marker</strong>
+<br> Anything selected as 'Value'<br>that's not a number.<br><br>""" ;cogs:joins cogsgit:bec8bd103ecf11ebb3780242ac130002 ; . 
+cogsgit:43e0907c3ed011ebb3780242ac130002 a cogs:Table ; rdfs:resource "43e0907c3ed011ebb3780242ac130002" ; rdfs:label "Table" ; rdfs:comment "3.7" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br>Hard code geography to 'K02000001'<br><br>
+<strong>Period</strong>
+<br> Taken from the header row, above<br>the observations<br><br>
+<strong>CDID</strong>
+<br>Selected cdids from column B<br><br>
+<strong>Flow_Directions</strong>
+<br> Set as one of 'Exports<br>(Credits)', 'Imports (Debits)',<br>'Balances'<br><br>
+<strong>Value</strong>
+<br> Taken as anything thats in line<br>with both a period and a CDID code<br><br>
+<strong>Marker</strong>
+<br> Anything selected as 'Value'<br>that's not a number.<br><br>""" ;cogs:joins cogsgit:bec8bd103ecf11ebb3780242ac130002 ; . 
+cogsgit:4ba2fe623ed011ebb3780242ac130002 a cogs:Table ; rdfs:resource "4ba2fe623ed011ebb3780242ac130002" ; rdfs:label "Table" ; rdfs:comment "3.8" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br>Hard code geography to 'K02000001'<br><br>
+<strong>Period</strong>
+<br> Taken from the header row, above<br>the observations<br><br>
+<strong>CDID</strong>
+<br>Selected cdids from column B<br><br>
+<strong>Flow_Directions</strong>
+<br> Set as one of 'Exports<br>(Credits)', 'Imports (Debits)',<br>'Balances'<br><br>
+<strong>Value</strong>
+<br> Taken as anything thats in line<br>with both a period and a CDID code<br><br>
+<strong>Marker</strong>
+<br> Anything selected as 'Value'<br>that's not a number.<br><br>""" ;cogs:joins cogsgit:bec8bd103ecf11ebb3780242ac130002 ; . 
+cogsgit:5bd2baa23ed011ebb3780242ac130002 a cogs:Table ; rdfs:resource "5bd2baa23ed011ebb3780242ac130002" ; rdfs:label "Table" ; rdfs:comment "3.9" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br>Hard code geography to 'K02000001'<br><br>
+<strong>Period</strong>
+<br> Taken from the header row, above<br>the observations<br><br>
+<strong>CDID</strong>
+<br>Selected cdids from column B<br><br>
+<strong>Flow_Directions</strong>
+<br> Set as one of 'Exports<br>(Credits)', 'Imports (Debits)',<br>'Balances'<br><br>
+<strong>Value</strong>
+<br> Taken as anything thats in line<br>with both a period and a CDID code<br><br>
+<strong>Marker</strong>
+<br> Anything selected as 'Value'<br>that's not a number.<br><br>""" ;cogs:joins cogsgit:bec8bd103ecf11ebb3780242ac130002 ; . 
+
+
+# Children (aka Merged Tables) created from combinations of initial tables and other Merged Tables
+cogsgit:bec8bd103ecf11ebb3780242ac130002 a cogs:Table ; rdfs:label "Table" ; rdfs:resource "bec8bd103ecf11ebb3780242ac130002" ; rdfs:comment "Pinkbook Final Output" ; rdfs:description """<br>
+<strong>Geography</strong>
+<br><i>no comments at this stage</i><br><br>
+<strong>Period</strong>
+<br>add a 'year/' prefix to all<br><br>
+<strong>CDID</strong>
+<br> Remove any observations with the<br>CDIDs: FJOW, FJQO or FJSI<br><br><br>
+<strong>Pink_Book_Services</strong>
+<br> Populated mapping from CDID to<br>PBclassification_table from google<br>drive<br><br>
+<strong>Flow_Directions</strong>
+<br> Pathify and tidy up to be one of<br>exports/debits/credits<br><br>
+<strong>Value</strong>
+<br><i>no comments at this stage</i><br><br>
+<strong>Marker</strong>
+<br> Replace 'NA' with 'not-availible'<br>and '-' with<br>'nil-or-less-than-a-million'.<br><br>""" ; cogs:uploads cogsgit:pmd1 ; .
+
+
+cogsgit:pmd1 a cogs:PMD ;
+  rdfs:label "PMD" ;
+  rdfs:resource "0";
+  rdfs:comment <https://staging.gss-data.org.uk/datasets?columns=http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fpublisher> ;
+.
+    

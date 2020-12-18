@@ -1,0 +1,161 @@
+{
+    "id": "841036ca3f8411ebb3780opiadd9130002",
+    "name": "ONSPinkbook",
+    "landing_page": [
+        {
+            "id": "841036ca3f8411ebb3780242ac130002",
+            "url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/datasets/3tradeinservicesthepinkbook2016",
+            "source": [
+                {
+                "id": "f8d649fa3f8311ebb3780242ac130002",
+                "name": "pinkbook2020chapter3.xls",
+                "downloadURL": "https://www.ons.gov.uk/file?uri=/economy/nationalaccounts/balanceofpayments/datasets/3tradeinservicesthepinkbook2016/thepinkbook2020/pinkbook2020chapter3.xls",
+                "tables": [
+                    {
+                        "id": "acd234cc3ec211ebb3780242ac130002",
+                        "name": "3.2",
+                        "columns": [
+                            {
+                                "Geography": ["Hard code geography to 'K02000001'"],
+                                "Period": ["Taken from the header row, above the observations"],
+                                "CDID": ["Selected cdids from column B"],
+                                "Flow_Directions": ["Set as one of 'Exports (Credits)', 'Imports (Debits)', 'Balances'"],
+                                "Value": ["Taken as anything thats in line with both a period and a CDID code"],
+                                "Marker": ["Anything selected as 'Value' that's not a number."]
+                            }
+                        ],
+                        "child":"bec8bd103ecf11ebb3780242ac130002"
+                    },
+                    {
+                        "id": "66d9eeae3ec411ebb3780242ac130002",
+                        "name": "3.3",
+                        "columns": [
+                            {
+                                "Geography": ["Hard code geography to 'K02000001'"],
+                                "Period":  ["Taken from the header row, above the observations"],
+                                "CDID": ["Selected cdids from column B"],
+                                "Flow_Directions": ["Set as one of 'Exports (Credits)', 'Imports (Debits)', 'Balances'"],
+                                "Value": ["Taken as anything thats in line with both a period and a CDID code"],
+                                "Marker": ["Anything selected as 'Value' that's not a number."]
+                            }
+                        ],
+                        "child":"bec8bd103ecf11ebb3780242ac130002"
+                    },
+                    {
+                        "id": "78f052543ec411ebb3780242ac130002",
+                        "name": "3.4",
+                        "columns": [
+                            {
+                                "Geography": ["Hard code geography to 'K02000001'"],
+                                "Period":  ["Taken from the header row, above the observations"],
+                                "CDID": ["Selected cdids from column B"],
+                                "Flow_Directions": ["Set as one of 'Exports (Credits)', 'Imports (Debits)', 'Balances'"],
+                                "Value": ["Taken as anything thats in line with both a period and a CDID code"],
+                                "Marker": ["Anything selected as 'Value' that's not a number."]
+                            }
+                        ],
+                        "child":"bec8bd103ecf11ebb3780242ac130002"
+                    },
+                    {
+                        "id": "f928c2523ecf11ebb3780242ac130002",
+                        "name": "3.5",
+                        "columns": [
+                            {
+                                "Geography": ["Hard code geography to 'K02000001'"],
+                                "Period":  ["Taken from the header row, above the observations"],
+                                "CDID": ["Selected cdids from column B"],
+                                "Flow_Directions": ["Set as one of 'Exports (Credits)', 'Imports (Debits)', 'Balances'"],
+                                "Value": ["Taken as anything thats in line with both a period and a CDID code"],
+                                "Marker": ["Anything selected as 'Value' that's not a number."]
+                            }
+                        ],
+                        "child":"bec8bd103ecf11ebb3780242ac130002"
+                    },
+                    {
+                        "id": "3e4b323e3ed011ebb3780242ac130002",
+                        "name": "3.6",
+                        "columns": [
+                            {
+                                "Geography": ["Hard code geography to 'K02000001'"],
+                                "Period":  ["Taken from the header row, above the observations"],
+                                "CDID": ["Selected cdids from column B"],
+                                "Flow_Directions": ["Set as one of 'Exports (Credits)', 'Imports (Debits)', 'Balances'"],
+                                "Value": ["Taken as anything thats in line with both a period and a CDID code"],
+                                "Marker": ["Anything selected as 'Value' that's not a number."]
+                            }
+                        ],
+                        "child":"bec8bd103ecf11ebb3780242ac130002"
+                    },
+                    {
+                        "id": "43e0907c3ed011ebb3780242ac130002",
+                        "name": "3.7",
+                        "columns": [
+                            {
+                                "Geography": ["Hard code geography to 'K02000001'"],
+                                "Period": ["Taken from the header row, above the observations"],
+                                "CDID": ["Selected cdids from column B"],
+                                "Flow_Directions": ["Set as one of 'Exports (Credits)', 'Imports (Debits)', 'Balances'"],
+                                "Value": ["Taken as anything thats in line with both a period and a CDID code"],
+                                "Marker": ["Anything selected as 'Value' that's not a number."]
+                            }
+                        ],
+                        "child":"bec8bd103ecf11ebb3780242ac130002"
+                    },
+                    {
+                        "id": "4ba2fe623ed011ebb3780242ac130002",
+                        "name": "3.8",
+                        "columns": [
+                            {
+                                "Geography": ["Hard code geography to 'K02000001'"],
+                                "Period": ["Taken from the header row, above the observations"],
+                                "CDID": ["Selected cdids from column B"],
+                                "Flow_Directions": ["Set as one of 'Exports (Credits)', 'Imports (Debits)', 'Balances'"],
+                                "Value": ["Taken as anything thats in line with both a period and a CDID code"],
+                                "Marker": ["Anything selected as 'Value' that's not a number."]
+                            }
+                        ],
+                        "child":"bec8bd103ecf11ebb3780242ac130002"
+                    },
+                    {
+                        "id": "5bd2baa23ed011ebb3780242ac130002",
+                        "name": "3.9",
+                        "columns": [
+                            {
+                                "Geography": ["Hard code geography to 'K02000001'"],
+                                "Period": ["Taken from the header row, above the observations"],
+                                "CDID": ["Selected cdids from column B"],
+                                "Flow_Directions": ["Set as one of 'Exports (Credits)', 'Imports (Debits)', 'Balances'"],
+                                "Value": ["Taken as anything thats in line with both a period and a CDID code"],
+                                "Marker": ["Anything selected as 'Value' that's not a number."]
+                            }
+                        ],
+                        "child":"bec8bd103ecf11ebb3780242ac130002"
+                    }
+                ] 
+                }
+            ]
+
+        }
+    ],
+    "children": [
+        {
+            "name": "Pinkbook Final Output",
+            "id": "bec8bd103ecf11ebb3780242ac130002",
+            "columns": [
+                {
+                    "Geography": [],
+                    "Period": ["add a 'year/' prefix to all"],
+                    "CDID": ["Remove any observations with the CDIDs: FJOW, FJQO or FJSI"],
+                    "Pink_Book_Services": ["Populated mapping from CDID to PBclassification_table from google drive"],
+                    "Flow_Directions": ["Pathify and tidy up to be one of exports/debits/credits"],
+                    "Value": [],
+                    "Marker": ["Replace 'NA' with 'not-availible' and '-' with 'nil-or-less-than-a-million'."]
+                }
+            ]
+        }
+    ]
+}
+    
+
+
+

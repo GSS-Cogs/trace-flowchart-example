@@ -11,7 +11,8 @@ What I'm trying to do is capture a simple overview with optional complexity (and
 Pipeline - the name of the pipeline, our starting node
 Landing Page - a landing page for a pipeline
 Distribution - a file taken from a landing page
-Table - the data within a table
+Table - a "tab" for a spreadsheet or a single csv taken from a source
+Merged Table - a concatenated table, from any combination of Tables and Merged Tables
 
 # Comments
 
@@ -19,9 +20,11 @@ The "comments" are captured via the TransformTracer against any one of the above
 of "hidden unless requested", so you have a relatively simple flowdiagram but you can drill down into exactly what
 each element is and how it was formed.
 
+I'm storing these as the rdfs:description per flowchart element.
+
 # This Repo
 
-- I've mocked up the input data as "trace.json" (this isn't the structure the TransformTrace is logging things in at the moment but it's all data it has access to and could). 
+- I've mocked up the input data as "trace.json" (this isn't how the TransformTrace is logging things at the moment but it's all data it has access to and could). 
 - Flowchart.ttl is build from trace.json (you could arguably just output ttl from trasformTrace but this was easier)
 - template.html makes it pretty
 
