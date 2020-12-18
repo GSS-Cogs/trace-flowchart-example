@@ -15,7 +15,7 @@ What I'm trying to do is capture a simple overview with optional complexity (and
 
 # Comments
 
-The "comments" are captured via the TransformTracer against any one of the above types, I'm aiming at some variation
+The "comments" are captured via the TransformTracer against tables and they detail what the DE's are logging out in the python code that powers the transforms, I'm aiming at some variation
 of "hidden unless requested", so you have a relatively simple flowdiagram but you can drill down into exactly what
 each element is and how it was formed.
 
