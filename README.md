@@ -8,11 +8,10 @@ What I'm trying to do is capture a simple overview with optional complexity (and
 
 # Types (for want of a better term)
 
-Pipeline - the name of the pipeline, our starting node
-Landing Page - a landing page for a pipeline
-Distribution - a file taken from a landing page
-Table - a "tab" for a spreadsheet or a single csv taken from a source
-Merged Table - a concatenated table, from any combination of Tables and Merged Tables
+* Pipeline - the name of the pipeline, our starting node
+* Landing Page - a landing page for a pipeline
+* Distribution - a file taken from a landing page
+* Table - a "table" for a spreadsheet, a single csv or something pieced together from one of more of them.
 
 # Comments
 
@@ -24,14 +23,14 @@ I'm storing these as the rdfs:description per flowchart element.
 
 # This Repo
 
-- I've mocked up the input data as "trace.json" (this isn't how the TransformTrace is logging things at the moment but it's all data it has access to and could). 
-- Flowchart.ttl is build from trace.json (you could arguably just output ttl from trasformTrace but this was easier)
-- template.html makes it pretty
+* I've mocked up the input data as "trace.json" (this isn't how the TransformTrace is logging things at the moment but it's all data it has access to and could). 
+* Flowchart.ttl is build from trace.json (you could arguably just output ttl from trasformTrace but this was easier)
+* template.html makes it pretty
 
 It's largely just Leigh's flowcharts with some automation and extra javascript.
 
 # Running Locally
 
 Navigate to this repo
-- in the terminal run a local file server `python3 -m http.server --bind 127.0.0.1 3333`
-- then browse to `http://127.0.0.1:3333/template.html`
+* in the terminal run a local file server `python3 -m http.server --bind 127.0.0.1 3333`
+* then browse to `http://127.0.0.1:3333/template.html`
